@@ -1,0 +1,52 @@
+.jumbotron {
+    background-image: url('assets/images/pizzafriends.png');
+    /* background-size: cover; */
+    background-repeat: repeat;
+    text-align: center;
+}  
+
+body {
+    background-color: rgb(236, 79, 152);
+}
+
+.gifdisplay {
+    margin-top: 10px;
+}
+
+.navbar-text {
+    display: block;
+    background-color: white;
+    padding: 15px;
+    border: 2px solid #17a6b7;
+    opacity: 0.9;
+   }
+
+
+footer {
+    margin-top: 30px;
+}
+
+.autumnBtn {
+    background-color: rgb(180, 25, 110);
+    color: rgb(231, 147, 50);
+}
+
+#newLike {
+    margin-bottom: 7px;
+}
+
+#addLike {
+    background-color: #fb9f32;
+}
+
+.transbox {
+  color: purple;
+  margin: 20px;
+  background-color: #ffffff;
+  border: 1px solid purple;
+  opacity: 0.9;
+}
+
+footer {
+    background-image: url('assets/images/pizzafriends.png');
+}

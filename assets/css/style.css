@@ -1,9 +1,18 @@
 .jumbotron {
-    background-image: url('assets/images/pizzafriends.png');
+    /* background-image: url('../images/pizzafriends.png'); */
+    color: white;
     /* background-size: cover; */
     background-repeat: repeat;
     text-align: center;
 }  
+.transbox {
+    color: purple;
+    margin: 20px;
+    background-color: white;
+    border: 1px solid;
+    opacity: 0.9;
+  }
+
 
 body {
     background-color: rgb(236, 79, 152);
@@ -13,16 +22,9 @@ body {
     margin-top: 10px;
 }
 
-.navbar-text {
-    display: block;
-    background-color: white;
-    padding: 15px;
-    border: 2px solid #17a6b7;
-    opacity: 0.9;
-   }
-
 
 footer {
+    background-image: url('assets/images/pizzafriends.png');
     margin-top: 30px;
 }
 
@@ -37,16 +39,4 @@ footer {
 
 #addLike {
     background-color: #fb9f32;
-}
-
-.transbox {
-  color: purple;
-  margin: 20px;
-  background-color: #ffffff;
-  border: 1px solid purple;
-  opacity: 0.9;
-}
-
-footer {
-    background-image: url('assets/images/pizzafriends.png');
 }

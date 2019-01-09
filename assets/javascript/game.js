@@ -30,7 +30,7 @@ function createButtons(){
         //create buttons based on terms list
         for(var i = 0; i < terms.length; i++){
 		var autumnBtn = $('<button>').text(terms[i]).addClass('autumnBtn').attr({'data-name': terms[i]});
-		$('#autumnBtns').append(breedBtn);
+		$('#autumnBtns').append(autumnBtn);
 	}
 
 	//displays gifs on click
@@ -42,7 +42,8 @@ function createButtons(){
         term + "&api_key=dc6zaTOxFJmzC&limit=10";		
         
         $.ajax({url: queryURL, method: 'GET'})
-        .done(function(giphy){
+        .then(function(giphy){
+            console.log("made it past ajax")
 			currentGif = giphy.data;
 			$.each(currentGif, function(index,value){
 				animatedGif= value.images.original.url;

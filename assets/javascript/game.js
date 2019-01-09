@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
 
-//global variables
+// variables
 
 var terms = [
     "Pizza",
@@ -24,16 +24,16 @@ var terms = [
 
 //create buttons
 function createButtons(){
-    //reset buttons so there aren't duplicates
+    //reset button
         $('#autumnBtns').empty();
 
-        //create buttons based on terms list
+        //create buttons from var
         for(var i = 0; i < terms.length; i++){
 		var autumnBtn = $('<button>').text(terms[i]).addClass('autumnBtn').attr({'data-name': terms[i]});
 		$('#autumnBtns').append(autumnBtn);
 	}
 
-	//displays gifs on click
+	//displays gifs
 	$('.autumnBtn').on('click', function(){
 		$('.gifdisplay').empty();
 
@@ -50,7 +50,7 @@ function createButtons(){
 				pausedGif = value.images.original_still.url;
                 var thisRating = value.rating;
                 
-                //gives blank ratings 'unrated' text
+                //gives blank ratings 
                 
 				if(thisRating == ''){
 					thisRating = 'unrated';
@@ -73,7 +73,7 @@ $(document).on('mouseleave','.playOnHover', function(){
     $(this).attr('src', $(this).data('paused'));
 });
 
-//sets a button from input
+
 $('#addLike').on('click', function(){
 	var newLike = $('#newLike').val().trim();
 	terms.push(newLike);
